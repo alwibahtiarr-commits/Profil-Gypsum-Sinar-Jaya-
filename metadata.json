@@ -1,0 +1,6 @@
+{
+  "name": "Sinar Jaya Gypsum",
+  "description": "Website Pemesanan Jasa Pemasangan Profil Gypsum untuk Sinar Jaya Gypsum, dengan target pasar keluarga muda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
