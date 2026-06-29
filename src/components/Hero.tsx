@@ -1,6 +1,13 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Sparkles, Calendar, Heart, Shield, HelpCircle } from 'lucide-react';
+import { Sparkles, Calendar, Heart, Shield } from 'lucide-react';
+
+// Import image assets
+import heroAlamat from '../assets/images/hero_alamat_1782395322982.jpg';
+import heroKontak from '../assets/images/hero_kontak_1782395299905.jpg';
+import heroProduk from '../assets/images/hero_produk_1782395278842.jpg';
+import heroProfil from '../assets/images/hero_profil_1782395261182.jpg';
+import pekerjaOriginal from '../assets/images/pekerja_original_full_1782397441850.jpg';
 
 interface HeroProps {
   activeTab: string;
@@ -20,7 +27,7 @@ export default function Hero({ activeTab, onOpenCalculator }: HeroProps) {
     beranda: {
       title: 'Wujudkan Ruangan Impian Anda Bersama Ahlinya.',
       sub: 'Spesialis pemasangan dan pengerjaan gypsum interior di Bandung Barat sejak 2005. Menghadirkan plafon rapi, kokoh, dan presisi yang dirancang khusus untuk kenyamanan keluarga muda.',
-      image: '/src/assets/images/pekerja_original_full_1782397441850.jpg',
+      image: pekerjaOriginal,
       badge: 'Solusi Profil Gypsum Keluarga',
       badgeIcon: Heart,
       ctaLabel: 'Mulai Konsultasi Gratis'
@@ -28,14 +35,14 @@ export default function Hero({ activeTab, onOpenCalculator }: HeroProps) {
     profil: {
       title: 'Dedikasi Penuh Untuk Hasil Rapih, Kokoh, Presisi.',
       sub: 'Berbekal ketekunan, kejujuran, dan pengalaman lebih dari 18 tahun, pendiri kami, Bpk. Ilyas merintis Sinar Jaya Gypsum dari bawah demi menciptakan karya interior bermutu tinggi.',
-      image: '/src/assets/images/hero_profil_1782395261182.jpg',
+      image: heroProfil,
       badge: 'Perjalanan & Visi Misi Kami',
       badgeIcon: Shield,
     },
     produk: {
       title: 'Apaan Ini Mulus Banget Kaya Istri Gue.',
       sub: 'Koleksi lengkap 30+ motif klasik legendaris dan 20+ model minimalis kekinian. Diuji dengan standar kerapihan tinggi yang cocok dengan tren dekorasi rumah modern saat ini.',
-      image: '/src/assets/images/hero_produk_1782395278842.jpg',
+      image: heroProduk,
       badge: 'Katalog Motif & Selisih Harga Hemat',
       badgeIcon: Sparkles,
       ctaLabel: 'Hitung Simulasi Harga'
@@ -43,14 +50,14 @@ export default function Hero({ activeTab, onOpenCalculator }: HeroProps) {
     kontak: {
       title: 'Mulai Rencana Anda, Konsultasikan Gratis Hari Ini.',
       sub: 'Hubungi Sinar Jaya Gypsum. Kami memberikan layanan SOP transparan tanpa ribet mulai dari konsultasi motif, survei lokasi gratis, hingga garansi pasca-pasang selama 2 bulan penuh.',
-      image: '/src/assets/images/hero_kontak_1782395299905.jpg',
+      image: heroKontak,
       badge: 'Hubungi Kami & SOP Pelayanan',
       badgeIcon: Calendar,
     },
     alamat: {
       title: 'Workshop Kami Selalu Terbuka Untuk Anda.',
       sub: 'Jl. Raya Ciburuy-Padalarang No. 187, Kabupaten Bandung Barat. Berada tepat di tepi jalan provinsi yang strategis dan sangat mudah ditemukan. Kami juga menjangkau pemasangan luar kota.',
-      image: '/src/assets/images/hero_alamat_1782395322982.jpg',
+      image: heroAlamat,
       badge: 'Lokasi Strategis & Area Layanan',
       badgeIcon: Shield,
     },
