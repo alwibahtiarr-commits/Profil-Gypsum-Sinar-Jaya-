@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { products } from '../data';
 import { Product } from '../types';
-import { Sparkles, CheckCircle2, ChevronRight, Bookmark } from 'lucide-react';
+import { Sparkles, ChevronRight, Bookmark } from 'lucide-react';
 
 interface ProductCatalogProps {
   onSelectProduct: (product: Product) => void;
@@ -17,7 +17,7 @@ export default function ProductCatalog({ onSelectProduct }: ProductCatalogProps)
   });
 
   return (
-    <div className="py-12 bg-white rounded-3xl shadow-xs px-6 sm:px-8" id="product-catalog-section">
+    <div className="py-4" id="product-catalog-section">
       {/* Title block */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="font-display font-extrabold text-3xl text-gray-900 tracking-tight">
@@ -47,10 +47,9 @@ export default function ProductCatalog({ onSelectProduct }: ProductCatalogProps)
       </div>
 
       {/* Guide details about price difference */}
-      <div className="bg-cream-beige/30 border border-cream-beige rounded-2xl p-6 mb-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-4 mb-12">
         <div>
-          <h4 className="font-display font-bold text-lg text-deep-blue-dark flex items-center space-x-2">
-            <Sparkles className="h-5 w-5 text-deep-blue animate-pulse" />
+          <h4 className="font-display font-bold text-lg text-deep-blue-dark">
             <span>Panduan Selisih Harga Sinar Jaya Gypsum</span>
           </h4>
           <p className="mt-2 text-sm text-gray-600 leading-relaxed">
@@ -59,13 +58,11 @@ export default function ProductCatalog({ onSelectProduct }: ProductCatalogProps)
         </div>
         <div className="space-y-2.5">
           <div className="flex items-start space-x-2">
-            <CheckCircle2 className="h-5 w-5 text-deep-blue mt-0.5 shrink-0" />
             <p className="text-sm text-gray-700">
               <strong className="font-bold">Ukuran 7 cm – 12 cm:</strong> Sangat hemat! Selisih harga antar-ukurannya hanya <strong className="text-deep-blue font-semibold">Rp 2.000 / meter</strong>.
             </p>
           </div>
           <div className="flex items-start space-x-2">
-            <CheckCircle2 className="h-5 w-5 text-deep-blue mt-0.5 shrink-0" />
             <p className="text-sm text-gray-700">
               <strong className="font-bold">Ukuran 14 cm – 20 cm:</strong> Selisih harga berkisar <strong className="text-deep-blue font-semibold">Rp 24.000</strong> (disesuaikan dengan detail kerumitan ukiran).
             </p>

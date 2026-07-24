@@ -17,7 +17,7 @@ export default function AddressSection() {
         {/* Mock Map & Area Coverage */}
         <div className="w-full flex flex-col justify-between space-y-6">
           {/* Visual Map Container */}
-          <div className="bg-white border border-soft-gray/30 rounded-3xl p-5 shadow-xs relative overflow-hidden flex-1 flex flex-col">
+          <div className="relative overflow-hidden flex-1 flex flex-col py-4" id="map-container-inner">
             <div className="flex justify-between items-center mb-3">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-widest font-sans">Peta Lokasi Workshop</span>
               <a 
@@ -64,7 +64,7 @@ export default function AddressSection() {
           </div>
 
           {/* Coverage Area Cards */}
-          <div className="bg-white border border-soft-gray/30 rounded-3xl p-5 shadow-xs">
+          <div className="py-4">
             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 font-sans flex items-center space-x-2">
               <Truck className="h-4 w-4 text-deep-blue" />
               <span>Jangkauan Area Pemasangan Sinar Jaya Gypsum</span>

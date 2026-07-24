@@ -34,16 +34,22 @@ export default function Navbar({ activeTab, setActiveTab, onOpenCalculator }: Na
                 className="h-8 w-8 select-none" 
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <defs>
+                  <linearGradient id="redGradientNav" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#ef4444" />
+                    <stop offset="100%" stopColor="#b91c1c" />
+                  </linearGradient>
+                </defs>
                 {/* S */}
                 <path 
                   d="M 31,18 C 21,18 13,23 9,33 L 21,37 C 23,31 26,28 31,28 C 35,28 38,30 38,34 C 38,38 35,40 28,43 C 17,47 11,52 11,63 C 11,73 19,79 30,79 C 40,79 47,74 50,64 L 38,60 C 36,64 34,67 30,67 C 26,67 23,65 23,62 C 23,58 26,56 33,53 C 44,49 50,44 50,34 C 50,24 42,18 31,18 Z" 
-                  fill="#2151B0" 
+                  fill="#3b82f6" 
                   transform="translate(59, 0) scale(-1, 1)"
                 />
                 {/* j body */}
                 <path 
                   d="M 68,32 H 82 V 70 C 82,82 77,88 64,88 C 57,88 51,85 51,79 L 51,75 H 63 C 63,77 65,78 67,78 C 69,78 70,76 70,70 V 32 Z" 
-                  fill="#2151B0" 
+                  fill="#3b82f6" 
                 />
                 {/* red square dot */}
                 <rect 
@@ -51,7 +57,7 @@ export default function Navbar({ activeTab, setActiveTab, onOpenCalculator }: Na
                   y="12" 
                   width="14" 
                   height="14" 
-                  fill="#D2232A" 
+                  fill="url(#redGradientNav)" 
                 />
               </svg>
             </div>
@@ -64,7 +70,6 @@ export default function Navbar({ activeTab, setActiveTab, onOpenCalculator }: Na
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-1" id="desktop-nav">
             {menuItems.map((item) => {
-              const IconComponent = item.icon;
               const isActive = activeTab === item.id;
               return (
                 <button
@@ -75,13 +80,12 @@ export default function Navbar({ activeTab, setActiveTab, onOpenCalculator }: Na
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
                   id={`nav-btn-${item.id}`}
-                  className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 ${
+                  className={`flex items-center px-4 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 ${
                     isActive
                       ? 'bg-deep-blue text-white shadow-md shadow-deep-blue/20'
                       : 'text-gray-600 hover:text-deep-blue hover:bg-cream-beige/30'
                   }`}
                 >
-                  <IconComponent className="h-4 w-4" />
                   <span>{item.label}</span>
                 </button>
               );

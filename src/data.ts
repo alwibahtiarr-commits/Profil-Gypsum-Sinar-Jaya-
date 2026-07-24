@@ -1,5 +1,8 @@
 import { Product, SOPStep, Testimonial, PortfolioItem } from './types';
 
+import p3Image from './assets/images/regenerated_image_1783609134559.jpg';
+import p4Image from './assets/images/regenerated_image_1783609136815.jpg';
+
 export const products: Product[] = [
   {
     id: 'mkn-piano',
@@ -164,14 +167,14 @@ export const portfolioItems: PortfolioItem[] = [
     id: 'p3',
     title: 'Ruang Makan Klasik Eropa Modern',
     description: 'Lis Ukiran L-100 A dengan paduan lampu gantung kristal menciptakan suasana makan malam yang mewah dan elegan.',
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=800&q=80',
+    image: p3Image,
     type: 'Klasik'
   },
   {
     id: 'p4',
     title: 'Ruang Keluarga Klasik Mewah',
     description: 'Desain plafon megah dengan Lis Gypsum Roman 20cm ditambah pengerjaan ornamen sudut yang sangat rapi dan presisi.',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80',
+    image: p4Image,
     type: 'Klasik'
   }
 ];

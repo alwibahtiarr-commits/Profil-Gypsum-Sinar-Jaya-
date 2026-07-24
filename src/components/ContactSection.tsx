@@ -26,7 +26,7 @@ export default function ContactSection() {
       
       {/* Centered Connection Card */}
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white border border-soft-gray/30 rounded-3xl p-6 sm:p-10 flex flex-col justify-between shadow-sm space-y-6">
+        <div className="py-4 flex flex-col justify-between space-y-6">
           <div>
             <span className="text-xs font-bold text-deep-blue uppercase tracking-widest font-sans">Koneksi Cepat & Langsung</span>
             <h3 className="font-display font-extrabold text-2xl text-gray-900 mt-1 mb-3 leading-tight">Hubungi Kami Secara Instan</h3>
