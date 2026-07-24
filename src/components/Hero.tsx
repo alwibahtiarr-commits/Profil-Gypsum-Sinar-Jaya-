@@ -6,7 +6,7 @@ import { Sparkles, Calendar, Heart, Shield } from 'lucide-react';
 import heroAlamat from '../assets/images/hero_alamat_1782395322982.jpg';
 import heroBeranda from '../assets/images/beranda.jpg';
 import heroKontak from '../assets/images/kontak.webp';
-import heroProduk from '../assets/images/hero_produk_1782395278842.jpg';
+import heroProduk from '../assets/images/produk.webp';
 import heroProfil from '../assets/images/profil1.webp';
 
 interface HeroProps {
