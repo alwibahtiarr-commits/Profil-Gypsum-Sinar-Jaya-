@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Sparkles, Calendar, Heart, Shield } from 'lucide-react';
 
 // Import image assets
-import heroAlamat from '../assets/images/hero_alamat_1782395322982.jpg';
+import heroAlamat from '../assets/images/lokasi.webp';
 import heroBeranda from '../assets/images/beranda.jpg';
 import heroKontak from '../assets/images/kontak.webp';
 import heroProduk from '../assets/images/produk.webp';
