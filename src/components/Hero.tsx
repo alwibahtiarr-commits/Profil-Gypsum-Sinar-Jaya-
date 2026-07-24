@@ -8,7 +8,6 @@ import heroBeranda from '../assets/images/beranda.jpg';
 import heroKontak from '../assets/images/kontak.webp';
 import heroProduk from '../assets/images/hero_produk_1782395278842.jpg';
 import heroProfil from '../assets/images/profil1.webp';
-import workerCover from '../assets/images/regenerated_image_1784768222452.webp';
 
 interface HeroProps {
   activeTab: string;
@@ -28,7 +27,7 @@ export default function Hero({ activeTab, onOpenCalculator }: HeroProps) {
     beranda: {
       title: 'Wujudkan Ruangan Impian Anda Bersama Ahlinya.',
       sub: 'Spesialis pemasangan dan pengerjaan gypsum interior di Bandung Barat sejak 2005. Menghadirkan plafon rapi, kokoh, dan presisi yang dirancang khusus untuk kenyamanan keluarga muda.',
-      image: workerCover,
+      image: heroBeranda,
       badge: 'Solusi Profil Gypsum Keluarga',
       badgeIcon: Heart,
       ctaLabel: 'Mulai Konsultasi Gratis'
